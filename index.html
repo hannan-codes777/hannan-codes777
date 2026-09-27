@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Hannan - Full-Stack Developer & UI/UX Designer creating modern, responsive, and performant web applications.">
+  <title>Hannan | Full-Stack Developer & Designer</title>
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Remix Icons CDN for sleek modern icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Glow & Grid Ornaments -->
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-symbol">&lt;H/&gt;</span>
+        <span class="logo-text">Hannan<span class="dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Controls (Theme Toggle & Mobile Menu Button) -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark mode">
+          <i class="ri-moon-line theme-icon-moon"></i>
+          <i class="ri-sun-line theme-icon-sun"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Talk</a>
+
+        <button type="button" class="mobile-toggle-btn" id="mobile-toggle" aria-label="Open navigation menu">
+          <i class="ri-menu-4-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Available for freelance & full-time roles
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Hannan</span>
+            <br>
+            A Passionate <span class="typing-text" id="typing-text">Full-Stack Developer</span>
+          </h1>
+          <p class="hero-description">
+            I craft clean, high-performance web applications and intuitive digital experiences. Bridging modern engineering with sleek, accessible user interface design.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i class="ri-mail-send-line"></i>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a href="mailto:hannan@example.com" aria-label="Email">
+                <i class="ri-mail-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Floating Tech Card -->
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="card-header">
+              <div class="window-buttons">
+                <span class="win-btn red"></span>
+                <span class="win-btn yellow"></span>
+                <span class="win-btn green"></span>
+              </div>
+              <span class="file-name">developer.config.ts</span>
+            </div>
+            <pre class="card-body"><code><span class="token-keyword">const</span> <span class="token-var">developer</span> = {
+  <span class="token-key">name</span>: <span class="token-string">'Hannan'</span>,
+  <span class="token-key">role</span>: <span class="token-string">'Full-Stack Software Engineer'</span>,
+  <span class="token-key">focus</span>: [<span class="token-string">'React'</span>, <span class="token-string">'Node.js'</span>, <span class="token-string">'TypeScript'</span>],
+  <span class="token-key">passion</span>: <span class="token-string">'Building scalable digital solutions'</span>,
+  <span class="token-key">status</span>: <span class="token-string">'Ready to collaborate 🚀'</span>,
+  <span class="token-function">code</span>() {
+    <span class="token-keyword">return</span> <span class="token-string">'Clean, Maintainable, Performant'</span>;
+  }
+};</code></pre>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-1">
+            <i class="ri-reactjs-line"></i>
+            <span>Modern React / Next</span>
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="ri-flashlight-line"></i>
+            <span>Fast & Responsive</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A brief overview of my journey, mindset, and what drives my work every day.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-bio">
+            <div class="about-image-wrapper">
+              <div class="avatar-box">
+                <i class="ri-user-smile-line avatar-icon"></i>
+              </div>
+            </div>
+            <h3>Building solutions with care & precision</h3>
+            <p>
+              I am a dedicated software developer with a strong foundation in modern web technologies. I love turning complex business challenges into simple, elegant, and user-centric web applications.
+            </p>
+            <p>
+              Whether it's building interactive user interfaces with modern JavaScript frameworks or architecting robust backend APIs and databases, I strive to write clean, maintainable, and well-tested code.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="ri-check-double-line"></i>
+                <span>Responsive & Mobile-First</span>
+              </div>
+              <div class="highlight-item">
+                <i class="ri-check-double-line"></i>
+                <span>Accessible & SEO Optimized</span>
+              </div>
+              <div class="highlight-item">
+                <i class="ri-check-double-line"></i>
+                <span>Component-Driven Architecture</span>
+              </div>
+              <div class="highlight-item">
+                <i class="ri-check-double-line"></i>
+                <span>Fast & Optimized Performance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats & Experience -->
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="ri-code-box-line"></i></div>
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="ri-rocket-line"></i></div>
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="ri-user-heart-line"></i></div>
+              <div class="stat-number">18+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon"><i class="ri-git-commit-line"></i></div>
+              <div class="stat-number">99%</div>
+              <div class="stat-label">Commitment to Quality</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Expertise</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Technologies, frameworks, and tools I use to bring ideas to life.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Frontend -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-frontend"><i class="ri-layout-masonry-line"></i></div>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag"><i class="ri-html5-fill"></i> HTML5</div>
+              <div class="skill-tag"><i class="ri-css3-fill"></i> CSS3 / SCSS</div>
+              <div class="skill-tag"><i class="ri-javascript-fill"></i> JavaScript (ES6+)</div>
+              <div class="skill-tag"><i class="ri-code-s-slash-line"></i> TypeScript</div>
+              <div class="skill-tag"><i class="ri-reactjs-line"></i> React.js</div>
+              <div class="skill-tag"><i class="ri-nextjs-fill"></i> Next.js</div>
+              <div class="skill-tag"><i class="ri-paint-brush-line"></i> Tailwind CSS</div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-backend"><i class="ri-server-line"></i></div>
+              <h3>Backend & APIs</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag"><i class="ri-nodejs-fill"></i> Node.js</div>
+              <div class="skill-tag"><i class="ri-cpu-line"></i> Express.js</div>
+              <div class="skill-tag"><i class="ri-database-2-line"></i> RESTful APIs</div>
+              <div class="skill-tag"><i class="ri-share-forward-line"></i> GraphQL</div>
+              <div class="skill-tag"><i class="ri-shield-keyhole-line"></i> JWT & Auth</div>
+              <div class="skill-tag"><i class="ri-terminal-box-line"></i> Python Basics</div>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases & Cloud -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-db"><i class="ri-database-line"></i></div>
+              <h3>Databases & Cloud</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag"><i class="ri-database-fill"></i> PostgreSQL</div>
+              <div class="skill-tag"><i class="ri-leaf-line"></i> MongoDB</div>
+              <div class="skill-tag"><i class="ri-fire-fill"></i> Firebase</div>
+              <div class="skill-tag"><i class="ri-cloud-line"></i> Supabase</div>
+              <div class="skill-tag"><i class="ri-server-fill"></i> Prisma ORM</div>
+              <div class="skill-tag"><i class="ri-cloud-windy-line"></i> Vercel & Netlify</div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Workflow -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-tools"><i class="ri-tools-line"></i></div>
+              <h3>Tools & Best Practices</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-tag"><i class="ri-git-branch-line"></i> Git & GitHub</div>
+              <div class="skill-tag"><i class="ri-cursor-line"></i> Figma to Code</div>
+              <div class="skill-tag"><i class="ri-terminal-line"></i> VS Code / CLI</div>
+              <div class="skill-tag"><i class="ri-speed-up-line"></i> Web Performance</div>
+              <div class="skill-tag"><i class="ri-smartphone-line"></i> Responsive Design</div>
+              <div class="skill-tag"><i class="ri-test-tube-line"></i> Jest & Testing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Recent Projects</h2>
+          <p class="section-subtitle">A collection of select web applications and client projects I've built.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button type="button" class="filter-btn" data-filter="frontend">Frontend</button>
+          <button type="button" class="filter-btn" data-filter="uiux">UI / Design</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-preview preview-gradient-1">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="mockup-bar"></div>
+                  <div class="mockup-boxes">
+                    <div class="mockup-box"></div>
+                    <div class="mockup-box"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">Full-Stack SaaS</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">DevPulse - Analytics & Productivity SaaS</h3>
+              <p class="project-desc">
+                An all-in-one developer workspace dashboard providing automated commit metrics, task management, and team collaboration workflows.
+              </p>
+              <div class="project-tech-stack">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source on GitHub">
+                  <i class="ri-github-line"></i> Code
+                </a>
+                <a href="#" class="project-link-btn primary" aria-label="View Live Demo">
+                  <i class="ri-external-link-line"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-preview preview-gradient-2">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="mockup-hero-box"></div>
+                  <div class="mockup-row">
+                    <div class="mockup-pill"></div>
+                    <div class="mockup-pill"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">E-Commerce Web</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aura Commerce - Minimalist Storefront</h3>
+              <p class="project-desc">
+                Ultra-fast modern shopping experience featuring instant filtering, cart state management, checkout simulation, and animated transitions.
+              </p>
+              <div class="project-tech-stack">
+                <span>React</span>
+                <span>Redux Toolkit</span>
+                <span>Styled Components</span>
+                <span>Stripe API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source on GitHub">
+                  <i class="ri-github-line"></i> Code
+                </a>
+                <a href="#" class="project-link-btn primary" aria-label="View Live Demo">
+                  <i class="ri-external-link-line"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-preview preview-gradient-3">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="mockup-kanban">
+                    <div class="mockup-col"></div>
+                    <div class="mockup-col"></div>
+                    <div class="mockup-col"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">Cloud Application</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FlowTask - Collaborative Kanban Board</h3>
+              <p class="project-desc">
+                Real-time sprint and project board with drag-and-drop task movements, role-based access control, and live WebSocket sync.
+              </p>
+              <div class="project-tech-stack">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>Socket.io</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source on GitHub">
+                  <i class="ri-github-line"></i> Code
+                </a>
+                <a href="#" class="project-link-btn primary" aria-label="View Live Demo">
+                  <i class="ri-external-link-line"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="uiux">
+            <div class="project-preview preview-gradient-4">
+              <div class="preview-mockup">
+                <div class="mockup-header">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-content">
+                  <div class="mockup-circle-chart"></div>
+                  <div class="mockup-bar"></div>
+                </div>
+              </div>
+              <span class="project-badge">UI/UX Design System</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Nexus UI - Design System & Component Library</h3>
+              <p class="project-desc">
+                An accessible, themeable design system with 40+ production-ready components, complete token system, and documentation site.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML5 / CSS3</span>
+                <span>JavaScript</span>
+                <span>Figma</span>
+                <span>Storybook</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Source on GitHub">
+                  <i class="ri-github-line"></i> Code
+                </a>
+                <a href="#" class="project-link-btn primary" aria-label="View Live Demo">
+                  <i class="ri-external-link-line"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have an exciting project, job opportunity, or just want to say hi? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information Card -->
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out through the form or via my social profiles. I will get back to you within 24 hours.</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="ri-mail-line"></i></div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:contact@hannan.dev" class="contact-val">contact@hannan.dev</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-val">Available Worldwide (Remote)</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="ri-time-line"></i></div>
+                <div>
+                  <span class="contact-label">Working Hours</span>
+                  <span class="contact-val">Mon - Fri: 9:00 AM - 6:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Card -->
+            <div class="contact-socials-box">
+              <span class="contact-label">Follow Me</span>
+              <div class="social-links mt-2">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="ri-user-line input-icon"></i>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                  </div>
+                  <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="ri-mail-line input-icon"></i>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                  </div>
+                  <span class="error-msg" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="ri-edit-line input-icon"></i>
+                  <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Job Opportunity" required>
+                </div>
+                <span class="error-msg" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <textarea id="message" name="message" rows="5" placeholder="Hi Hannan, I would love to discuss a project..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                <span>Send Message</span>
+                <i class="ri-send-plane-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-symbol">&lt;H/&gt;</span>
+            <span class="logo-text">Hannan<span class="dot">.</span></span>
+          </a>
+          <p class="footer-tagline">Crafting modern, accessible, and high-performance digital experiences.</p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Hannan. All rights reserved.</p>
+        <button type="button" class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+          <i class="ri-arrow-up-line"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <i class="ri-checkbox-circle-fill toast-icon"></i>
+    <span class="toast-message" id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
